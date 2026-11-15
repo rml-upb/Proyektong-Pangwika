@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mga Larang - Proyektong Pangwika</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="tab1.html" class="logo">
+      <i class="fa-solid fa-wheat-awn logo-icon"></i>
+      <span>Proyektong Pangwika</span>
+    </a>
+    <nav class="nav-links">
+      <a href="tab1.html">Pangunahing Pahina</a>
+      <a href="tab2.html">Etimolohiya</a>
+      <a href="tab3.html" class="active">Mga Larang</a>
+      <a href="tab4.html">Mapa</a>
+      <a href="tab5.html">Laro</a>
+      <a href="tab6.html">Tab 6</a>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    <section class="card">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-solid fa-cubes"></i></div>
+        <div>
+          <h2 class="card-title">Mga Larang</h2>
+          <p class="card-subtitle"></p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="larang-card active" data-target="panel-agri" role="button" tabindex="0">
+          <i class="fa-solid fa-wheat-awn"></i>
+          <h4>Agrikultura, Ekonomiks, at Kabuhayan</h4>
+        </div>
+        <div class="larang-card" data-target="panel-kalikasan" role="button" tabindex="0">
+          <i class="fa-solid fa-leaf"></i>
+          <h4>Kapaligiran at Kalikasan</h4>
+        </div>
+        <div class="larang-card" data-target="panel-kalusugan" role="button" tabindex="0">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <h4>Kalusugan</h4>
+        </div>
+      </div>
+
+      <div class="larang-detail larang-panel active" id="panel-agri">
+        <div class="detail-heading">
+          <i class="fa-solid fa-wheat-awn"></i>
+          <h3>Agrikultura, Ekonomiks, at Kabuhayan</h3>
+        </div>
+
+        <!-- 1. Agrikultura sa Ekonomiya -->
+        <div class="detail-quote">
+          <i class="fa-solid fa-quote-right quote-mark"></i>
+          <p>Ang pangunahing sektor na nagtataguyod sa ekonomiya ng Pilipinas ay ang sektor ng agrikultura. Patuloy itong nagsisilbing hanapbuhay sa sambayanang Pilipino lalo na sa kalayunan sa kabila ng paglaganap ng urbanisasyon at paglitaw ng mga industriya sa bansa.</p>
+          <span class="source"><i class="fa-solid fa-feather"></i> Ayon sa Farmonaut Research &amp; Content Team</span>
+        </div>
+
+        <div class="lalawigan-grid">
+
+          <!-- 2. Pangasinan -->
+          <article class="lalawigan-card">
+            <span class="lalawigan-badge"><i class="fa-solid fa-trophy"></i> Top Rice-Producing Province</span>
+            <h4>Pangasinan</h4>
+            <p class="lalawigan-title">&ldquo;Rice Granary&rdquo; ng Region I at kabilang sa Top Rice Producing Provinces</p>
+            <p>Sa opisyal na datos ng PSA, ang Pangasinan ay parehong pinakamalaking producer ng palay sa Region I (nag-aambag ng humigit-kumulang 50% hanggang 60% ng kabuuang ani ng rehiyon) at palagiang kabilang sa Top 5 Rice-Producing Provinces sa buong Pilipinas kasama ang Nueva Ecija, Isabela, Cagayan, at Tarlac.</p>
+
+            <div class="stat-row">
+              <div class="stat-box">
+                <strong>50&ndash;60%</strong>
+                <span>ng kabuuang ani ng palay sa Region I</span>
+              </div>
+              <div class="stat-box">
+                <strong>Top 5</strong>
+                <span>sa buong Pilipinas</span>
+              </div>
+            </div>
+
+            <div class="chip-list">
+              <span class="chip highlight">Pangasinan</span>
+              <span class="chip">Nueva Ecija</span>
+              <span class="chip">Isabela</span>
+              <span class="chip">Cagayan</span>
+              <span class="chip">Tarlac</span>
+            </div>
+            <p class="source-note"><i class="fa-solid fa-landmark"></i> Pinagmulan ng datos: PSA</p>
+          </article>
+
+          <!-- 3. Ilocos Norte (Dingras) -->
+          <article class="lalawigan-card">
+            <span class="lalawigan-badge"><i class="fa-solid fa-seedling"></i> Rice Granary</span>
+            <h4>Ilocos Norte (Dingras)</h4>
+            <p class="lalawigan-title">Rice Granary ng Ilocos Norte, Modernisasyon, at Hybrid Rice</p>
+            <p>Ang bayan ng Dingras, Ilocos Norte ay opisyal na kilala at binansagang &ldquo;Rice Granary of Ilocos Norte&rdquo; dahil sa malawak nitong patag na lupain at mataas na ani.</p>
+
+            <div class="stat-row">
+              <div class="stat-box">
+                <strong><i class="fa-solid fa-mountain-sun" style="font-size:1.2rem;"></i></strong>
+                <span>Malawak at patag na lupain</span>
+              </div>
+              <div class="stat-box">
+                <strong><i class="fa-solid fa-arrow-trend-up" style="font-size:1.2rem;"></i></strong>
+                <span>Mataas na ani</span>
+              </div>
+            </div>
+
+            <div class="chip-list">
+              <span class="chip">Modernisasyon</span>
+              <span class="chip">Hybrid Rice</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Kapaligiran at Kalikasan -->
+      <div class="larang-detail larang-panel" id="panel-kalikasan">
+        <div class="detail-heading">
+          <i class="fa-solid fa-leaf"></i>
+          <h3>Kapaligiran at Kalikasan</h3>
+        </div>
+
+        <div class="song-banner">
+          <div class="song-icon"><i class="fa-solid fa-music"></i></div>
+          <div>
+            <h4>Salidummay</h4>
+            <span>Prominenteng grupo &bull; Oggayam (chant) ng Kalinga</span>
+          </div>
+        </div>
+
+        <div class="detail-quote">
+          <i class="fa-solid fa-quote-right quote-mark"></i>
+          <p>Ang kanta ng prominenteng grupong Salidummay ay tungkol sa kahalagahan ng pagay at ng mga tao. Ginagamit ng kanta ang tradisyonal na oggayam (o chant) ng Kalinga upang ilarawan ang epekto ng mga kilos at galaw ng mga tao sa pagay at ang pagtubo nito.</p>
+        </div>
+
+        <div class="contrast-grid">
+          <div class="contrast-card lanta">
+            <div class="contrast-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <h5>Kapag hindi inaalagaan ang pagay</h5>
+            <p>Nalalanta ito.</p>
+          </div>
+          <div class="contrast-card sagana">
+            <div class="contrast-icon"><i class="fa-solid fa-seedling"></i></div>
+            <h5>Kapag inaalagaan ang lupain</h5>
+            <p>Sa lupaing kinatutubuan ng pagay, masagana ang ani rito.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kalusugan -->
+      <div class="larang-detail larang-panel" id="panel-kalusugan">
+        <div class="detail-heading">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <h3>Kalusugan</h3>
+        </div>
+
+        <div class="health-grid">
+          <article class="lalawigan-card">
+            <span class="lalawigan-badge"><i class="fa-solid fa-chart-pie"></i> DOST-FNRI</span>
+            <h4>2018&ndash;2019 Expanded National Nutrition Survey</h4>
+            <p class="lalawigan-title">Pagkonsumo ng kanin kada araw</p>
+            <p>Batay sa 2018-2019 Expanded National Nutrition Survey (ENNS) ng Department of Science and Technology-Food and Nutrition Research Institute (DOST-FNRI), malaki ang bilang ng sambayanang Pilipinong kumokonsumo at kumakain ng kanin sa araw-araw, tinatayang siyam sa bawat sampu o mahigit 95.3%.</p>
+            <div class="big-stat">95.3<small>%</small></div>
+            <span class="source-note">tinatayang siyam sa bawat sampung Pilipino</span>
+            <div class="bowl-row" aria-hidden="true">
+              <i class="fa-solid fa-bowl-rice"></i><i class="fa-solid fa-bowl-rice"></i><i class="fa-solid fa-bowl-rice"></i><i class="fa-solid fa-bowl-rice"></i><i class="fa-solid fa-bowl-rice"></i><i class="fa-solid fa-bowl-rice"></i><i class="fa-solid fa-bowl-rice"></i><i class="fa-solid fa-bowl-rice"></i><i class="fa-solid fa-bowl-rice"></i><i class="fa-solid fa-bowl-rice empty"></i>
+            </div>
+          </article>
+
+          <article class="lalawigan-card">
+            <span class="lalawigan-badge"><i class="fa-solid fa-utensils"></i> National Nutrition Council</span>
+            <h4>Staple Food ng mga Pilipino</h4>
+            <p class="lalawigan-title">Pangunahing pagkain sa bansa</p>
+            <p>Ayon sa National Nutrition Council (NNC), ang kanin ay nagsisilbing staple food o pangunahing pagkain ng mga Pilipino sa bansa. Ito ay naglalaman ng kalahating calories na kinakailangan ng ating katawan upang mapanatili itong malusog.</p>
+            <div class="meter"><div class="meter-fill"></div></div>
+            <div class="meter-label"><span>Calories mula sa kanin</span><span>&frac12; ng kailangan ng katawan</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Proyektong Pangwika | Unibersidad ng Pilipinas Baguio</p>
+  </footer>
+
+  <script>
+    (function () {
+      var cards = document.querySelectorAll('.larang-card[data-target]');
+      var panels = document.querySelectorAll('.larang-panel');
+      function show(card) {
+        cards.forEach(function (c) { c.classList.remove('active'); });
+        panels.forEach(function (p) { p.classList.remove('active'); });
+        card.classList.add('active');
+        document.getElementById(card.dataset.target).classList.add('active');
+      }
+      cards.forEach(function (card) {
+        card.addEventListener('click', function () { show(card); });
+        card.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(card); }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
