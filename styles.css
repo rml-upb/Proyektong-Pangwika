@@ -852,3 +852,43 @@ body { overflow-x: hidden; overflow-wrap: anywhere; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ===== Fix: banners overflowing their container on mobile ===== */
+.song-banner,
+.festival-banner {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+.song-banner > div:last-child,
+.festival-banner > div:last-child {
+  min-width: 0;
+  flex: 1 1 0;
+  max-width: 100%;
+}
+.song-banner h4,
+.song-banner span,
+.festival-banner h4,
+.festival-banner p {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+@media (max-width: 600px) {
+  .song-banner,
+  .festival-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .song-banner > div:last-child,
+  .festival-banner > div:last-child {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .song-banner h4 { font-size: 1.15rem; }
+  .song-banner .song-icon { width: 46px; height: 46px; font-size: 1.2rem; }
+  .festival-banner .festival-icon { width: 52px; height: 52px; font-size: 1.4rem; }
+}
